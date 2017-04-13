@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\poisample-1.0-SNAPSHOT.jar
+set CLASSPATH=%APP_HOME%\lib\poisample-1.0-SNAPSHOT.jar;%APP_HOME%\lib\poi-3.15.jar;%APP_HOME%\lib\poi-ooxml-3.15.jar;%APP_HOME%\lib\commons-codec-1.10.jar;%APP_HOME%\lib\commons-collections4-4.1.jar;%APP_HOME%\lib\poi-ooxml-schemas-3.15.jar;%APP_HOME%\lib\curvesapi-1.04.jar;%APP_HOME%\lib\xmlbeans-2.6.0.jar;%APP_HOME%\lib\stax-api-1.0.1.jar
 
 @rem Execute poisample
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %POISAMPLE_OPTS%  -classpath "%CLASSPATH%" com.linecorp.Main %CMD_LINE_ARGS%

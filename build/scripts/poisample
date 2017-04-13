@@ -64,7 +64,7 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOME/lib/poisample-1.0-SNAPSHOT.jar
+CLASSPATH=$APP_HOME/lib/poisample-1.0-SNAPSHOT.jar:$APP_HOME/lib/poi-3.15.jar:$APP_HOME/lib/poi-ooxml-3.15.jar:$APP_HOME/lib/commons-codec-1.10.jar:$APP_HOME/lib/commons-collections4-4.1.jar:$APP_HOME/lib/poi-ooxml-schemas-3.15.jar:$APP_HOME/lib/curvesapi-1.04.jar:$APP_HOME/lib/xmlbeans-2.6.0.jar:$APP_HOME/lib/stax-api-1.0.1.jar
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
